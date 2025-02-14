@@ -1,7 +1,7 @@
 export default function Navbar() {
     return (
         <nav className="fixed top-0 left-0 w-full bg-white shadow z-50">
-            <div className="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div className="container mx-auto px-4 py-6 flex justify-between items-center">
                 <p className="font-semibold">Largiemore Chalet Owners Association</p>
                 <ul className="flex space-x-6">
                     <li>

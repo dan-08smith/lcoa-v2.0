@@ -1,24 +1,27 @@
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import MainSection from "./components/MainSection";
+import Carousel from "./components/Carousel";
 
 export default function HomePage() {
   return (
     <>
       <Navbar />
       
-      <section id="hero" className="h-screen flex items-center justify-center bg-gray-100">
-        <div className="text-center">
+      <section id="hero" className="relative h-screen">
+        <div className="absolute inset-0 z-40 flex flex-col justify-center items-center 
+          text-center text-white bg-black/30" style={{ pointerEvents: "none" }}>
           <h6 className="text-lg">Hello, we're the</h6>
           <h1 className="text-4xl font-bold">Largiemore</h1>
           <h4 className="text-xl mt-2">Chalet Owners Association</h4>
         </div>
-        {/* Slideshow Placeholder */}
-        <div className="flex space-x-3 mt-6">
-          <img src="/img/img-1.jpg" alt="Slide 1" className="h-32 w-auto rounded" />
-          <img src="/img/img-2.jpg" alt="Slide 2" className="h-32 w-auto rounded" />
-          <img src="/img/img-3.jpg" alt="Slide " className="h-32 w-auto rounded" />
-        </div>
+          
+        <Carousel images={[
+          {src: "/img/img-1.jpg", alt: "Slide 1"},
+          {src: "/img/img-2.jpg", alt: "Slide 2"},
+          {src: "/img/img-3.jpg", alt: "Slide 3"},
+          ]}
+        />
       </section>
 
       <MainSection id="about" title="About Us" subtitle="Find Out More">
