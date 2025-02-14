@@ -27,7 +27,7 @@ export default function LoginPage() {
       </form>
 
       <div className="mt-4 text-center">
-        <p className="mt-2">Don't have an account? <Link href="/auth/register"
+        <p className="mt-2">Don&apos;t have an account? <Link href="/auth/register"
           className="text-blue-600 hover:underline">Register here</Link></p>
         <p className="mt-5 text-gray-600">
           Want to bypass login? <Link href="/portal" className="text-blue-600 hover:underline">

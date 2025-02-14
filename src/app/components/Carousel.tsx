@@ -1,6 +1,6 @@
 "use client";
-
 import { useState } from "react";
+import Image from "next/image";
 
 interface CarouselProps {
   images: { src: string; alt: string }[]; // Array of image objects
@@ -36,7 +36,7 @@ export default function Carousel({ images }: CarouselProps) {
               currentIndex === index ? "opacity-100 z-20" : "opacity-0 z-10"
             }`}
           >
-            <img src={image.src} alt={image.alt} className="w-full h-full object-cover"/>
+            <Image src={image.src} alt={image.alt} width={500} height={500} className="w-full h-full object-cover"/>
           </div>
         ))}
       </div>

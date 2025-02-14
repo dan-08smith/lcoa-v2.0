@@ -4,7 +4,6 @@ import { UserCog, Folders, Users } from "lucide-react";
 import PortalNavbar from "../components/portalnavbar";
 
 export default function PortalPage() {
-    const userName = "John Doe"; //Replace with dynamic data
 
     return (
         <div className="min-h-screen flex flex-col bg-gray-100">

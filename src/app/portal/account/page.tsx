@@ -4,7 +4,6 @@ import Footer from "@/app/components/footer";
 import PortalNavbar from "@/app/components/portalnavbar";
 
 export default function AccountPage() {
-  const userName = "John Doe"; //Replace with dynamic user data
 
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col">
