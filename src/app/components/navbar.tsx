@@ -12,7 +12,7 @@ export default function Navbar() {
         {/* Responsive Brand */}
         <p className="text-xl font-semibold sm:text-lg">
           <span className="hidden sm:inline">Largiemore Chalet Owners Association</span>
-          <span className="sm:hidden">LCOA</span>
+          <span className="sm:hidden">Largiemore COA</span>
         </p>
 
         {/* Hamburger Menu Button */}
@@ -32,7 +32,7 @@ export default function Navbar() {
           {/* Standard Links */}
           <li className="flex items-center">
             <a
-              href="#hero"
+              href="/#hero"
               className="block px-4 py-2 text-center sm:px-0 sm:py-0 sm:text-left text-black hover:text-blue-500 transition-colors duration-200"
             >
               Home
@@ -40,7 +40,7 @@ export default function Navbar() {
           </li>
           <li className="flex items-center">
             <a
-              href="#about"
+              href="/#about"
               className="block px-4 py-2 text-center sm:px-0 sm:py-0 sm:text-left text-black hover:text-blue-500 transition-colors duration-200"
             >
               About
@@ -48,7 +48,7 @@ export default function Navbar() {
           </li>
           <li className="flex items-center">
             <a
-              href="#files"
+              href="/#files"
               className="block px-4 py-2 text-center sm:px-0 sm:py-0 sm:text-left text-black hover:text-blue-500 transition-colors duration-200"
             >
               Files
@@ -56,7 +56,7 @@ export default function Navbar() {
           </li>
           <li className="flex items-center">
             <a
-              href="#contact"
+              href="/#contact"
               className="block px-4 py-2 text-center sm:px-0 sm:py-0 sm:text-left text-black hover:text-blue-500 transition-colors duration-200"
             >
               Contact
