@@ -1,29 +1,38 @@
-import PortalNavbar from "../components/portalnavbar";
 import Footer from "../components/footer";
+import LinkCard from "../components/LinkCard";
+import { UserCog, Folders, Users } from "lucide-react";
+import PortalNavbar from "../components/portalnavbar";
 
 export default function PortalPage() {
+    const userName = "John Doe"; //Replace with dynamic data
+
     return (
         <div className="min-h-screen flex flex-col bg-gray-100">
-            <PortalNavbar />
+            <PortalNavbar 
+                leftTitle={'Hi, ${userName}! Welcome to your portal.'}
+                returnHref="/"
+                returnLabel="Return to Home"
+            />
 
             <main className="container mx-auto px-4 py-8 flex-grow">
-                <section>
-                    <h2 className="text-2xl font-bold mb-4">Quick Links</h2>
+                <section className="mb-8">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                        <a href="/portal/account" 
-                            className="p-4 bg-blue-100 hover:bg-blue-200 rounded shadow flex items-center"
-                        >Manage Account</a>
-                        <a href="/files/documents" 
-                            className="p-4 bg-blue-100 hover:bg-blue-200 rounded shadow flex items-center"
-                        >View Files??</a>
-                        <a href="/portal/settings" 
-                            className="p-4 bg-blue-100 hover:bg-blue-200 rounded shadow flex items-center"
-                        >Weather Info??</a>
+                        <LinkCard
+                            href="/portal/account"
+                            icon={UserCog}
+                            label="Manage Account"
+                        />
+                        <LinkCard
+                            href="/portal/files"
+                            icon={Folders}
+                            label="View Files"
+                        />
+                        <LinkCard
+                            href="/portal/committee"
+                            icon={Users}
+                            label="LCOA Committee"
+                        />
                     </div>
-                </section>
-
-                <section>
-                    <p>Faux Padding</p>
                 </section>
 
                 <section className="mb-8">
@@ -32,11 +41,11 @@ export default function PortalPage() {
                         <div className="p-4 bg-white shadow rounded">
                             <h3 className="text-xl font-semibold">Welcome to our New Website!</h3>
                             <p className="text-gray-600 mt-2">
-                                Lorem ipsum odor amet, consectetuer adipiscing elit. Aliquet sem varius finibus 
-                                malesuada vel pretium cras eleifend. Platea habitasse integer ullamcorper sociosqu 
-                                pellentesque tempus.
+                                We are excited to announce the launch of our brand-new website! This platform
+                                has been designed with our members in mind, offering a modern interface and
+                                easy access to essential information.
                             </p>
-                            <a href="#" className="text-blue-600 hover:underline mt-2 inline-block">Read More</a>
+                            <a href="/portal/announcement" className="text-blue-600 hover:underline mt-2 inline-block">Read More</a>
                         </div>
                     </div>
                 </section>

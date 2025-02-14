@@ -2,6 +2,8 @@ import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import MainSection from "./components/MainSection";
 import Carousel from "./components/Carousel";
+import LinkCard from "./components/LinkCard";
+import { FileText, Send, Link } from "lucide-react";
 
 export default function HomePage() {
   return (
@@ -11,9 +13,8 @@ export default function HomePage() {
       <section id="hero" className="relative h-screen">
         <div className="absolute inset-0 z-40 flex flex-col justify-center items-center 
           text-center text-white bg-black/30" style={{ pointerEvents: "none" }}>
-          <h6 className="text-lg">Hello, we're the</h6>
-          <h1 className="text-4xl font-bold">Largiemore</h1>
-          <h4 className="text-xl mt-2">Chalet Owners Association</h4>
+          <h1 className="text-[90px] font-medium">Largiemore</h1>
+          <h4 className="text-[26px] font-semibold mt-3">Chalet Owners Association</h4>
         </div>
           
         <Carousel images={[
@@ -35,55 +36,55 @@ export default function HomePage() {
         </p>
       </MainSection>
 
-      <MainSection id="files" title="Files" subtitle="Explore Our">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="flex items-center space-x-3">
-            <img src="/icons/file-pdf.svg" alt="PDF File Icon" className="h-6 w-6" />
-            <a href="/files/blank.pdf" target="_blank" rel="noopener noreferrer"
-              className="text-blue-600 hover:underline">Membership Form</a>
-          </div>
-          <div className="flex items-center space-x-3">
-            <img src="/icons/file-pdf.svg" alt="PDF File Icon" className="h-6 w-6" />
-            <a href="/files/blank.pdf" target="_blank" rel="noopener noreferrer"
-              className="text-blue-600 hover:underline">New Member Form</a>
-          </div>
-          <div className="flex items-center space-x-3">
-            <img src="/icons/file-pdf.svg" alt="PDF File Icon" className="h-6 w-6" />
-            <a href="/files/blank.pdf" target="_blank" rel="noopener noreferrer"
-              className="text-blue-600 hover:underline">Association Constitution</a>
-          </div>
-          <div className="flex items-center space-x-3">
-            <img src="/icons/file-pdf.svg" alt="PDF File Icon" className="h-6 w-6" />
-            <a href="/files/blank.pdf" target="_blank" rel="noopener noreferrer"
-              className="text-blue-600 hover:underline">Terms and Conditions</a>
-          </div>
+      <MainSection id="files" title="Our Files" subtitle="Explore">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <LinkCard
+            href="/files/blank.pdf"
+            icon={FileText}
+            label="Membership Form"
+          />
+          <LinkCard
+            href="/files/blank.pdf"
+            icon={FileText}
+            label="New Member Info"
+          />
+          <LinkCard
+            href="/files/blank.pdf"
+            icon={FileText}
+            label="Association Constitution"
+          />
+          <LinkCard
+            href="/files/blank.pdf"
+            icon={FileText}
+            label="Terms and Conditions"
+          />
         </div>
       </MainSection>
 
       <MainSection id="contact" title="Contact Us" subtitle="Feel Free To">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div>
-          <p>
-            <img src="/icons/at.svg" alt="Email Icon" className="inline-block h-6 w-6 mr-2" />
-            <a href="mailto:largiemorecoa@gmail.com" className="text-blue-600 hover:underline">
-              largiemorecoa@gmail.com
-            </a>
-          </p>
-          <p>
-            <img src="/icons/link.svg" alt="URL Icon" className="inline-block h-6 w-6 mr-2" />
-            <a href="https://largiemore.com" target="_blank" rel="noopener noreferrer"
-              className="text-blue-600 hover:underline">
-              Largiemore Holiday Estate
-            </a>
-          </p>
-        </div>
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2232.4581048484542!2d-5.302927183429815!3d56.02591675811799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48899cac0e6ca065%3A0x73de29688ff08ad7!2sLargiemore%20Estate!5e1!3m2!1sen!2suk!4v1732137798330!5m2!1sen!2suk"
-            className="w-full h-64"
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            allowFullScreen
-          ></iframe>
+          <div className="flex flex-col justify-center space-y-4">
+            <LinkCard
+              href="mailto:largiemorecoa@gmail.com"
+              icon={Send}
+              label="largiemorecoa@gmail.com"
+            />
+            <LinkCard
+              href="https://largiemore.com"
+              icon={Link}
+              label="Largiemore Holiday Estate"
+              target="_blank"
+            />
+          </div>
+          <div className="w-full">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2232.4581048484542!2d-5.302927183429815!3d56.02591675811799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48899cac0e6ca065%3A0x73de29688ff08ad7!2sLargiemore%20Estate!5e1!3m2!1sen!2suk!4v1732137798330!5m2!1sen!2suk"
+              className="w-full h-64"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
+            ></iframe>
+          </div>
         </div>
       </MainSection>
 

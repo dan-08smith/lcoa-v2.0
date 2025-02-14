@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function ResetPasswordPage() {
     return (
-        <AuthCard title="Reset Password">
+        <AuthCard title="Reset Your Password">
             <form>
                 <div className="mb-4">
                     <label className="block mb-1 font-medium">Email</label>

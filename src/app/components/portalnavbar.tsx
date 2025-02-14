@@ -1,19 +1,27 @@
-"use client";
+import Link from "next/link";
 
-export default function PortalNavbar() {
-    return (
-        <nav className="bg-blue-600 text-white py-4">
-            <div className="container mx-auto px-4 flex justify-between items-center">
-                <h1 className="text-xl font-bold">Welcome, "User"!</h1>
+interface PortalNavbarProps {
+  leftTitle: string; 
+  returnHref: string; 
+  returnLabel: string; 
+}
 
-                <div className="space-x-4">
-                    <a href="/" className="text-white hover:underline">Back to Home</a>
-                    <button
-                        onClick={() => alert("Logging out...")} // Replace with actual logout logic
-                        className="text-white py-2 px-4 rounded hover:bg-red-700"
-                    >LogOut</button>
-                </div>
-            </div>
-        </nav>
-    );
+export default function PortalNavbar({ leftTitle, returnHref, returnLabel }: PortalNavbarProps) {
+  return (
+    <nav className="bg-blue-600 text-white px-4 py-3 shadow">
+      <div className="container mx-auto px-4 py-1.5 flex justify-between items-center">
+        <h1 className="text-xl font-bold">{leftTitle}</h1>
+
+        <div className="flex space-x-4">
+          <Link href={returnHref}
+            className="px-4 py-2 hover:underline text-white font-semibold rounded"
+          >{returnLabel}</Link>
+
+          <Link href="/auth/logout"
+            className="px-4 py-2 hover:bg-red-600 text-white font-semibold rounded"
+          >Log Out</Link>
+        </div>
+      </div>
+    </nav>
+  );
 }

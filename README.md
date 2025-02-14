@@ -1,36 +1,100 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LCOA Website
+
+**Visit:** [https://www.url.com](https://www.url.com)
+
+This website has been designed and built for LCOA. It consists of a publicly-accessible webpage for general information and a restricted webpage for members to access more confidential information.
+
+## Technologies Used
+
+**Frontend:**
+- [Next.js](https://nextjs.org/) for routing and server-side rendering
+- [Tailwind CSS](https://tailwindcss.com/) for styling
+- [Lucide Icons](https://lucide.dev/) for icons
+
+**Backend:**
+- [Amazon Web Services](https://aws.amazon.com/) for hosting and more
+
+**Other:**
+- [GitHub](https://github.com/) for version control
+
+## Project Structure
+
+```
+.
+├── app
+│   ├── portal
+│   │   ├── page.tsx            // Main portal page
+│   │   ├── account
+│   │   │   └── page.tsx        // Account management page
+│   │   ├── committee
+│   │   │   └── page.tsx        // Committee page
+│   │   ├── files
+│   │   │   └── page.tsx        // Files page for downloads
+│   │   ├── announcement
+│   │   │   └── page.tsx        // Single announcement details page
+│   ├── auth
+│   │   ├── page.tsx
+│   │   ├── delete-account
+│   │   │   └── page.tsx        // Delete account page
+│   │   ├── logout
+│   │   │   └── page.tsx        // Logout page
+│   │   ├── register
+│   │   │   └── page.tsx        // Registration page
+│   │   ├── reset-password
+│   │   │   └── page.tsx        // Reset password page
+│   ├── components
+│   │   ├── AuthCard.tsx        // Card component for authentication processes
+│   │   ├── Carousel.tsx        // Component for home page slideshow carousel
+│   │   ├── footer.tsx          // Footer component
+│   │   ├── LinkCard.tsx        // Card component for quick links and files
+│   │   └── MainSection.tsx     // Component for sections of home page
+│   │   ├── navbar.tsx          // Navbar component
+│   │   ├── PersonCard.tsx      // Card component for committee members
+│   │   ├── portalnavbar.tsx    // Portal Navbar component
+├── public                      // Static assets (images, PDFs, etc.)
+│   ├── img
+│   │   ├── user-profile.jpg    // Placeholder profile images
+│   │   ├── img-1.jpg           // 1st slideshow image
+│   │   ├── img-2.jpg           // 2nd slideshow image
+│   │   ├── img-3.jpg           // 3rd slideshow image
+│   ├── files                   // PDF documents for files section
+│   │   ├── blank.pdf
+├── README.md                   // Project documentation
+├── package.json                // Dependencies and scripts
+├── tailwind.config.ts          // Tailwind configuration
+└── next.config.ts              // Next.js configuration
+
+```
 
 ## Getting Started
 
-First, run the development server:
+**1. Clone the Repository**
+```
+git clone https://github.com/dan-08smith/lcoa-v2.0.git
+cd your-repo-name
+```
 
-```bash
+**2. Install Dependencies**
+```
+npm install
+# or
+yarn install
+```
+
+**3. Run the Development Server**
+```
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**4. Access the Site**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the project.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**5. Build for Deployment**
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Create an optimised build for deployment.
+```
+npm run build
+```
