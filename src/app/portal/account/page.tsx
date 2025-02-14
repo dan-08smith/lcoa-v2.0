@@ -2,6 +2,8 @@
 import Link from "next/link";
 import Footer from "@/app/components/footer";
 import PortalNavbar from "@/app/components/portalnavbar";
+import LinkCard from "@/app/components/LinkCard";
+import { UserPen, SquareAsterisk, ShieldCheck } from "lucide-react";
 
 export default function AccountPage() {
 
@@ -14,8 +16,16 @@ export default function AccountPage() {
       />
 
       <main className="container mx-auto px-4 py-8 flex-grow">
-        <section className="bg-white shadow rounded p-6 mb-8">
-          <h2 className="text-2xl font-bold mb-4">Account Details</h2>
+        <section className="bg-white shadow rounded p-6 mb-8 relative">
+          <div className="flex items-center justify-between mb-4">
+            <h2 className="text-2xl font-bold mb-2">Account Details</h2>
+            <a href="/portal/account/update-details"
+              className="absolute top-6 right-6"
+              aria-label="Update Account Details"
+            ><UserPen className="w-8 h-8 align-right text-blue-600 mr-4" />
+            </a>
+          </div>
+          
           <div className="space-y-4">
             <div>
               <span className="font-medium">Full Name: </span>
@@ -49,40 +59,20 @@ export default function AccountPage() {
           </div>
         </section>
 
-        
+        <section className="bg-white shadow rounded p-6 mb-8">
+          <LinkCard
+            href="/portal/account/change-password"
+            icon={SquareAsterisk}
+            label="Change Your Password"
+          />
+        </section>
 
         <section className="bg-white shadow rounded p-6 mb-8">
-          <h2 className="text-2xl font-bold mb-4">Update Your Details</h2>
-          <form>
-            <div className="mb-4">
-              <label className="block mb-1 font-medium">Full Name</label>
-              <input type="text" defaultValue="John Doe"
-                className="w-full px-4 py-2 border rounded"/>
-            </div>
-            <div className="mb-4">
-              <label className="block mb-1 font-medium">Primary Address</label>
-              <input type="text" defaultValue="18 Park Avenue, Glasgow, GA1 5GD"
-                className="w-full px-4 py-2 border rounded"/>
-            </div>
-            <div className="mb-4">
-              <label className="block mb-1 font-medium">Phone Number</label>
-              <input type="tel" defaultValue="07436 035784"
-                className="w-full px-4 py-2 border rounded"/>
-            </div>
-            <div className="mb-4">
-              <label className="block mb-1 font-medium">Email</label>
-              <input type="email" defaultValue="john.doe@example.com"
-                className="w-full px-4 py-2 border rounded"/>
-            </div>
-            <div className="mb-4">
-              <label className="block mb-1 font-medium">Password</label>
-              <input type="password" defaultValue="loljkhaha"
-                className="w-full px-4 py-2 border rounded"/>
-            </div>
-            <button type="submit"
-              className="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700"
-            >Save Details</button>
-          </form>
+          <LinkCard
+            href="/portal/account/2fa/enable"
+            icon={ShieldCheck}
+            label="Enable 2 Factor Authentication"
+          />
         </section>
 
         <section className="bg-white shadow rounded p-6">
