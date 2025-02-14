@@ -5,7 +5,7 @@ export default function AnnouncementPage() {
     <section className="py-16">
       <div className="container mx-auto px-4">
         <h1 className="text-3xl font-bold mb-4">Welcome to our New Website!</h1>
-        <p className="text-gray-500 text-sm mb-4">Posted on: 14-02-2025</p>
+        <p className="text-gray-500 text-sm mb-4">Posted on: 13-02-2025</p>
         <p className="text-gray-700 font-bold leading-relaxed mb-4">
           We are excited to announce the launch of our brand-new website! This platform
           has been designed with our members in mind, offering a modern interface and

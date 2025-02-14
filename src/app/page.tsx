@@ -13,10 +13,9 @@ export default function HomePage() {
       <section id="hero" className="relative h-screen">
         <div className="absolute inset-0 z-40 flex flex-col justify-center items-center 
           text-center text-white bg-black/30" style={{ pointerEvents: "none" }}>
-          <h1 className="text-[90px] font-medium">Largiemore</h1>
-          <h4 className="text-[26px] font-semibold mt-3">Chalet Owners Association</h4>
+          <h1 className="text-5xl md:text-7xl font-medium">Largiemore</h1>
+          <h4 className="text-lg md:text-2xl font-semibold mt-3">Chalet Owners Association</h4>
         </div>
-          
         <Carousel images={[
           {src: "/img/img-1.jpg", alt: "Slide 1"},
           {src: "/img/img-2.jpg", alt: "Slide 2"},

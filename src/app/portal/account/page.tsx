@@ -8,7 +8,7 @@ export default function AccountPage() {
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col">
       <PortalNavbar
-        leftTitle={'Your Account, ${userName}'}
+        leftTitle={'Your Account'}
         returnHref="/portal"
         returnLabel="Return to Portal"
       />
@@ -30,6 +30,10 @@ export default function AccountPage() {
               22
             </div>
             <div>
+              <span className="font-medium">Phone Number: </span>
+              07436 035784
+            </div>
+            <div>
               <span className="font-medium">Primary Address: </span>
               18 Park Avenue, Glasgow, GA1 5GD
             </div>
@@ -46,7 +50,7 @@ export default function AccountPage() {
         
 
         <section className="bg-white shadow rounded p-6 mb-8">
-          <h2 className="text-2xl font-bold mb-4">Edit Account</h2>
+          <h2 className="text-2xl font-bold mb-4">Update Your Details</h2>
           <form>
             <div className="mb-4">
               <label className="block mb-1 font-medium">Full Name</label>
@@ -55,7 +59,12 @@ export default function AccountPage() {
             </div>
             <div className="mb-4">
               <label className="block mb-1 font-medium">Primary Address</label>
-              <input type="test" defaultValue="18 Park Avenue, Glasgow, GA1 5GD"
+              <input type="text" defaultValue="18 Park Avenue, Glasgow, GA1 5GD"
+                className="w-full px-4 py-2 border rounded"/>
+            </div>
+            <div className="mb-4">
+              <label className="block mb-1 font-medium">Phone Number</label>
+              <input type="tel" defaultValue="07436 035784"
                 className="w-full px-4 py-2 border rounded"/>
             </div>
             <div className="mb-4">
@@ -75,12 +84,12 @@ export default function AccountPage() {
         </section>
 
         <section className="bg-white shadow rounded p-6">
-          <h2 className="text-2xl font-bold mb-4">Delete Account</h2>
+          <h2 className="text-2xl font-bold mb-4">Delete Your Account</h2>
           <p className="mb-2">Click the button below to delete your account and all data stored by LCOA.</p>
           <p className="italic font-bold mb-5">Warning: Please note, this action cannot be undone.</p>
           <Link href="/auth/delete-account"
             className="bg-red-600 text-white px-4 py-2 hover:bg-red-700 font-bold rounded"
-          >Delete Your Account</Link>
+          >Delete Account</Link>
         </section>
       </main>
 

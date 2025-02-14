@@ -6,7 +6,7 @@ export default function FilesPage() {
   return (
     <div className="min-h-screen flex flex-col bg-gray-100">
       <PortalNavbar
-        leftTitle="Your Private Files"
+        leftTitle="Your Files"
         returnHref="/portal/"
         returnLabel="Return to Portal"
       />

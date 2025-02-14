@@ -5,7 +5,7 @@ export default function CommitteePage() {
   return (
     <>
       <PortalNavbar
-        leftTitle="Your Largiemore COA Committee"
+        leftTitle="Your LCOA Committee"
         returnHref="/portal"
         returnLabel="Return to Portal"
       />
