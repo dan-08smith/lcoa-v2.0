@@ -39,19 +39,6 @@ export default function SupportPage() {
 
                     <div className="p-4 bg-white shadow rounded flex flex-col">
                     <div className="flex items-center mb-4">
-                        <ExternalLink className="w-8 h-8 text-blue-600 mr-4" />
-                        <h3 className="text-lg font-bold">Status Page</h3>
-                    </div>
-                    <p className="text-gray-600 mb-4">
-                        Something not working? Check the status of this website&apos;s servers.
-                    </p>
-                    <a href="https://lcoa.statuspage.io/" target="_blank" rel="noopener noreferrer"
-                        className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 text-center"
-                    >Visit</a>
-                    </div>
-
-                    <div className="p-4 bg-white shadow rounded flex flex-col">
-                    <div className="flex items-center mb-4">
                         <Send className="w-8 h-8 text-blue-600 mr-4" />
                         <h3 className="text-lg font-bold">Contact Committee</h3>
                     </div>
@@ -74,6 +61,19 @@ export default function SupportPage() {
                     <a href="mailto:largiemorecoa@gmail.com"
                         className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 text-center"
                     >Email</a>
+                    </div>
+
+                    <div className="p-4 bg-white shadow rounded flex flex-col">
+                    <div className="flex items-center mb-4">
+                        <ExternalLink className="w-8 h-8 text-blue-600 mr-4" />
+                        <h3 className="text-lg font-bold">Status Page</h3>
+                    </div>
+                    <p className="text-gray-600 mb-4">
+                        Something not working? Check the status of this website&apos;s servers.
+                    </p>
+                    <a href="https://lcoa.statuspage.io/" target="_blank" rel="noopener noreferrer"
+                        className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 text-center"
+                    >Visit</a>
                     </div>
 
                     <div className="p-4 bg-white shadow rounded flex flex-col">
