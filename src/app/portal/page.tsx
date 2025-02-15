@@ -11,7 +11,7 @@ export default function PortalPage() {
             <PortalNavbar 
                 leftTitle={<Greeting name='John Doe'/>}
                 returnHref="/"
-                returnLabel="Return to Home"
+                returnLabel="Home"
             />
 
             <main className="container mx-auto px-4 py-8 flex-grow">

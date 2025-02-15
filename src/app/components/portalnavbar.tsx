@@ -38,7 +38,7 @@ export default function PortalNavbar({
         >
           <Link
             href={returnHref}
-            className="px-4 py-2 text-white font-semibold rounded hover:underline"
+            className="px-4 py-2 text-white font-semibold rounded hover:text-black"
           >
             {returnLabel}
           </Link>
