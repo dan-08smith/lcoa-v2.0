@@ -3,6 +3,7 @@ import Footer from "./components/footer";
 import MainSection from "./components/MainSection";
 import Carousel from "./components/Carousel";
 import LinkCard from "./components/LinkCard";
+import PageCard from "./components/PageCard";
 import { FileText, Send, Link } from "lucide-react";
 
 export default function HomePage() {
@@ -35,27 +36,25 @@ export default function HomePage() {
         </p>
       </MainSection>
 
-      <MainSection id="files" title="Our Files" subtitle="Explore">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <LinkCard
-            href="/files/blank.pdf"
-            icon={FileText}
-            label="Membership Form"
+      <MainSection id="things-to-do" title="Things To Do Nearby" subtitle="Explore">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-8">
+          <PageCard
+            title="Activity Name"
+            description="Lorem ipsum odor amet, consectetuer adipiscing elit."
+            image="https://via.placeholder.com/300x200"
+            href="/things-to-do/activity-1"
           />
-          <LinkCard
-            href="/files/blank.pdf"
-            icon={FileText}
-            label="New Member Info"
+          <PageCard
+            title="Activity Name"
+            description="Lorem ipsum odor amet, consectetuer adipiscing elit."
+            image="https://via.placeholder.com/300x200"
+            href="/things-to-do/activity-2"
           />
-          <LinkCard
-            href="/files/blank.pdf"
-            icon={FileText}
-            label="Association Constitution"
-          />
-          <LinkCard
-            href="/files/blank.pdf"
-            icon={FileText}
-            label="Terms and Conditions"
+          <PageCard
+            title="Activity Name"
+            description="Lorem ipsum odor amet, consectetuer adipiscing elit."
+            image="https://via.placeholder.com/300x200"
+            href="/things-to-do/activity-3"
           />
         </div>
       </MainSection>

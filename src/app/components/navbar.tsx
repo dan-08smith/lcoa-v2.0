@@ -48,10 +48,10 @@ export default function Navbar() {
           </li>
           <li className="flex items-center">
             <a
-              href="/#files"
+              href="/#things-to-do"
               className="block px-4 py-2 text-center sm:px-0 sm:py-0 sm:text-left text-black hover:text-blue-500 transition-colors duration-200"
             >
-              Files
+              Things To Do
             </a>
           </li>
           <li className="flex items-center">
