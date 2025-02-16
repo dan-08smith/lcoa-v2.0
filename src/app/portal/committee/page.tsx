@@ -8,7 +8,7 @@ export default function CommitteePage() {
       <PortalNavbar
         leftTitle="Your LCOA Committee"
         returnHref="/portal"
-        returnLabel="Portal"
+        returnLabel="Back"
       />
       <section className="py-16">
         <div className="container mx-auto px-4">

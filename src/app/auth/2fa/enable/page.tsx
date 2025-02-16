@@ -9,14 +9,14 @@ export default function Enable2FA() {
         <AuthCard title="Enable 2FA">
         <section className="bg-white shadow rounded p-6 mb-8">
             <LinkCard
-                href="/portal/account/2fa/verify"
+                href="/auth/2fa/verify"
                 icon={Signal}
                 label="Via SMS"
             />
         </section>
         <section className="bg-white shadow rounded p-6 mb-8">
             <LinkCard
-                href="/portal/account/2fa/verify"
+                href="/auth/2fa/verify"
                 icon={TabletSmartphone}
                 label="Via Authentication App"
             />

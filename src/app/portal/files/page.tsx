@@ -8,7 +8,7 @@ export default function FilesPage() {
       <PortalNavbar
         leftTitle="Your Files"
         returnHref="/portal/"
-        returnLabel="Portal"
+        returnLabel="Back"
       />
 
       <main className="container mx-auto px-4 py-8 flex-grow">

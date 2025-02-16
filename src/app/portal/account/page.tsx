@@ -12,7 +12,7 @@ export default function AccountPage() {
       <PortalNavbar
         leftTitle={'Your Account'}
         returnHref="/portal"
-        returnLabel="Portal"
+        returnLabel="Back"
       />
 
       <main className="container mx-auto px-4 py-8 flex-grow">
@@ -61,7 +61,7 @@ export default function AccountPage() {
 
         <section className="bg-white shadow rounded p-6 mb-8">
           <LinkCard
-            href="/portal/account/change-password"
+            href="/auth/change-password"
             icon={SquareAsterisk}
             label="Change Your Password"
           />
@@ -69,7 +69,7 @@ export default function AccountPage() {
 
         <section className="bg-white shadow rounded p-6 mb-8">
           <LinkCard
-            href="/portal/account/2fa/enable"
+            href="/auth/2fa/enable"
             icon={ShieldCheck}
             label="Enable 2 Factor Authentication"
           />

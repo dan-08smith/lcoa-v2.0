@@ -11,7 +11,7 @@ export default function Footer() {
           {" "}•{" "}
           <Link href="/" 
             className="hover:text-blue-600 "
-          >&copy; {new Date().getFullYear()} Largiemore Chalet Owners Association (LCOA)
+          >Copyright &copy; {new Date().getFullYear()} Largiemore Chalet Owners Association (LCOA)
           </Link>
         </p>
       </div>

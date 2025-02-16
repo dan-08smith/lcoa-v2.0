@@ -1,6 +1,6 @@
 import Footer from "../components/footer";
 import LinkCard from "../components/LinkCard";
-import { UserCog, Folders, Users } from "lucide-react";
+import { UserCog, Folders, Newspaper } from "lucide-react";
 import PortalNavbar from "../components/portalnavbar";
 import Greeting from "../components/Greeting";
 
@@ -16,6 +16,7 @@ export default function PortalPage() {
 
             <main className="container mx-auto px-4 py-8 flex-grow">
                 <section className="mb-8">
+                    <h2 className="text-2xl font-bold mb-4">Quick Links</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                         <LinkCard
                             href="/portal/account"
@@ -28,15 +29,15 @@ export default function PortalPage() {
                             label="View Files"
                         />
                         <LinkCard
-                            href="/portal/committee"
-                            icon={Users}
-                            label="LCOA Committee"
+                            href="/portal/announcements"
+                            icon={Newspaper}
+                            label="LCOA Announcements"
                         />
                     </div>
                 </section>
 
                 <section className="mb-8">
-                    <h2 className="text-2xl font-bold mb-4">Recent Announcements</h2>
+                    <h2 className="text-2xl font-bold mb-4">Latest Announcements</h2>
                     <div className="space-y-4">
                         <div className="p-4 bg-white shadow rounded">
                             <h3 className="text-xl font-semibold">Upcoming Annual General Meeting (AGM)</h3>
@@ -45,7 +46,7 @@ export default function PortalPage() {
                                 Chalet Owners Association will be held on Saturday, 20th April 2025, at 12:00 PM 
                                 in Chalet #10.
                             </p>
-                            <a href="/portal/announcement/14-02-2025" className="text-blue-600 hover:underline mt-2 inline-block">Read More</a>
+                            <a href="/portal/announcements/2025/upcoming-annual-general-meeting" className="text-blue-600 hover:underline mt-2 inline-block">Read More</a>
                         </div>
                         <div className="p-4 bg-white shadow rounded">
                             <h3 className="text-xl font-semibold">Welcome to our New Website!</h3>
@@ -54,7 +55,7 @@ export default function PortalPage() {
                                 has been designed with our members in mind, offering a modern interface and
                                 easy access to essential information.
                             </p>
-                            <a href="/portal/announcement/13-02-2025" className="text-blue-600 hover:underline mt-2 inline-block">Read More</a>
+                            <a href="/portal/announcements/2025/welcome-to-our-new-website" className="text-blue-600 hover:underline mt-2 inline-block">Read More</a>
                         </div>
                     </div>
                 </section>
