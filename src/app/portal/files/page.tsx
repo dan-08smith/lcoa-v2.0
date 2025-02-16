@@ -1,5 +1,5 @@
-import PortalNavbar from "@/app/components/PortalNavbar";
-import Footer from "@/app/components/footer";
+import PortalNavbar from "../../components/PortalNavbar";
+import Footer from "../../components/footer";
 import { FileText } from "lucide-react";
 
 export default function FilesPage() {

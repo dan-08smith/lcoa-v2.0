@@ -1,4 +1,4 @@
-import AnnouncementPage from "@/app/components/AnnouncementPage";
+import AnnouncementPage from "../../../../components/AnnouncementPage";
 
 export default function AnnouncementNewWebsitePage() {
   return (

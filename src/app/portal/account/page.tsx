@@ -1,8 +1,8 @@
 "use client";
 import Link from "next/link";
-import Footer from "@/app/components/footer";
-import PortalNavbar from "@/app/components/PortalNavbar";
-import LinkCard from "@/app/components/LinkCard";
+import Footer from "../../components/footer";
+import PortalNavbar from "../../components/PortalNavbar";
+import LinkCard from "../../components/LinkCard";
 import { UserPen, SquareAsterisk, ShieldCheck } from "lucide-react";
 
 export default function AccountPage() {

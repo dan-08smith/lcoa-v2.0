@@ -1,6 +1,6 @@
-import PortalNavbar from "@/app/components/PortalNavbar";
-import Banner from "@/app/components/Banner";
-import Footer from "@/app/components/footer";
+import PortalNavbar from "../../../components/PortalNavbar";
+import Banner from "../../../components/Banner";
+import Footer from "../../../components/footer";
 
 export default function UsersManagerPage() {
     return (

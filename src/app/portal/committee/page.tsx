@@ -1,6 +1,6 @@
-import PersonCard from "@/app/components/PersonCard";
-import PortalNavbar from "@/app/components/PortalNavbar";
-import Footer from "@/app/components/footer";
+import PersonCard from "../../components/PersonCard";
+import PortalNavbar from "../../components/PortalNavbar";
+import Footer from "../../components/footer";
 
 export default function CommitteePage() {
   return (
