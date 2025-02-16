@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import Footer from "@/app/components/footer";
-import PortalNavbar from "@/app/components/portalnavbar";
+import PortalNavbar from "@/app/components/PortalNavbar";
 import { UserPen } from "lucide-react";
 
 export default function UpdateAccountDetails() {
@@ -10,8 +10,6 @@ export default function UpdateAccountDetails() {
     <div className="min-h-screen bg-gray-100 flex flex-col">
       <PortalNavbar
         leftTitle={'Your Details'}
-        returnHref="/portal/account"
-        returnLabel="Return to Account"
       />
 
       <main className="container mx-auto px-4 py-8 flex-grow"> 

@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import Footer from "@/app/components/footer";
-import PortalNavbar from "@/app/components/portalnavbar";
+import PortalNavbar from "@/app/components/PortalNavbar";
 import LinkCard from "@/app/components/LinkCard";
 import { UserPen, SquareAsterisk, ShieldCheck } from "lucide-react";
 
@@ -11,8 +11,6 @@ export default function AccountPage() {
     <div className="min-h-screen bg-gray-100 flex flex-col">
       <PortalNavbar
         leftTitle={'Your Account'}
-        returnHref="/portal"
-        returnLabel="Back"
       />
 
       <main className="container mx-auto px-4 py-8 flex-grow">

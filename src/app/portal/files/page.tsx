@@ -1,4 +1,4 @@
-import PortalNavbar from "@/app/components/portalnavbar";
+import PortalNavbar from "@/app/components/PortalNavbar";
 import Footer from "@/app/components/footer";
 import { FileText } from "lucide-react";
 
@@ -7,8 +7,6 @@ export default function FilesPage() {
     <div className="min-h-screen flex flex-col bg-gray-100">
       <PortalNavbar
         leftTitle="Your Files"
-        returnHref="/portal/"
-        returnLabel="Back"
       />
 
       <main className="container mx-auto px-4 py-8 flex-grow">

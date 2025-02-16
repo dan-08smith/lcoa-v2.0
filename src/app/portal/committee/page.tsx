@@ -1,5 +1,5 @@
 import PersonCard from "@/app/components/PersonCard";
-import PortalNavbar from "@/app/components/portalnavbar";
+import PortalNavbar from "@/app/components/PortalNavbar";
 import Footer from "@/app/components/footer";
 
 export default function CommitteePage() {
@@ -7,8 +7,6 @@ export default function CommitteePage() {
     <>
       <PortalNavbar
         leftTitle="Your LCOA Committee"
-        returnHref="/portal"
-        returnLabel="Back"
       />
       <section className="py-16">
         <div className="container mx-auto px-4">

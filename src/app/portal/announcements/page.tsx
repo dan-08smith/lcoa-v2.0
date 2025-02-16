@@ -1,4 +1,4 @@
-import PortalNavbar from "@/app/components/portalnavbar";
+import PortalNavbar from "@/app/components/PortalNavbar";
 import Footer from "@/app/components/footer";
 
 export default function AnnouncementsPage() {
@@ -6,8 +6,6 @@ export default function AnnouncementsPage() {
         <>
             <PortalNavbar
                 leftTitle="All Announcements"
-                returnHref="/portal"
-                returnLabel="Back"
             />
 
             <Footer />

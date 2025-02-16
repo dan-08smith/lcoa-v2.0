@@ -1,17 +1,15 @@
 import Footer from "../components/footer";
 import LinkCard from "../components/LinkCard";
 import { UserCog, Folders, Newspaper } from "lucide-react";
-import PortalNavbar from "../components/portalnavbar";
+import PortalNavbar from "../components/PortalNavbar";
 import Greeting from "../components/Greeting";
 
 export default function PortalPage() {
 
     return (
         <div className="min-h-screen flex flex-col bg-gray-100">
-            <PortalNavbar 
+            <PortalNavbar
                 leftTitle={<Greeting name='John Doe'/>}
-                returnHref="/"
-                returnLabel="Home"
             />
 
             <main className="container mx-auto px-4 py-8 flex-grow">
