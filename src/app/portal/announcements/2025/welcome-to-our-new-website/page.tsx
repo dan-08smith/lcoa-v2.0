@@ -1,4 +1,3 @@
-import Link from "next/link";
 import AnnouncementPage from "@/app/components/AnnouncementPage";
 
 export default function AnnouncementNewWebsitePage() {

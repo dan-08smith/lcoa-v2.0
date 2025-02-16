@@ -4,7 +4,7 @@ import MainSection from "./components/MainSection";
 import Carousel from "./components/Carousel";
 import LinkCard from "./components/LinkCard";
 import PageCard from "./components/PageCard";
-import { FileText, Send, Link } from "lucide-react";
+import { Send, Link } from "lucide-react";
 
 export default function HomePage() {
   return (

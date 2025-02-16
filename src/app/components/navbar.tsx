@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import Link from "next/link";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -31,46 +32,31 @@ export default function Navbar() {
         >
           {/* Standard Links */}
           <li className="flex items-center">
-            <a
-              href="/#hero"
-              className="block px-4 py-2 text-center sm:px-0 sm:py-0 sm:text-left text-black hover:text-blue-500 transition-colors duration-200"
-            >
-              Home
-            </a>
+            <Link href="/#hero"
+              className="block px-4 py-2 text-center sm:px-0 sm:py-0 sm:text-left text-black hover:text-blue-500 transition-colors duration-200" 
+            >Home</Link>
           </li>
           <li className="flex items-center">
-            <a
-              href="/#about"
+            <Link href="/#about"
               className="block px-4 py-2 text-center sm:px-0 sm:py-0 sm:text-left text-black hover:text-blue-500 transition-colors duration-200"
-            >
-              About
-            </a>
+            >About</Link>
           </li>
           <li className="flex items-center">
-            <a
-              href="/#things-to-do"
+            <Link href="/#things-to-do"
               className="block px-4 py-2 text-center sm:px-0 sm:py-0 sm:text-left text-black hover:text-blue-500 transition-colors duration-200"
-            >
-              Things To Do
-            </a>
+            >Things To Do</Link>
           </li>
           <li className="flex items-center">
-            <a
-              href="/#contact"
+            <Link href="/#contact"
               className="block px-4 py-2 text-center sm:px-0 sm:py-0 sm:text-left text-black hover:text-blue-500 transition-colors duration-200"
-            >
-              Contact
-            </a>
+            >Contact</Link>
           </li>
 
           {/* Portal Button */}
           <li className="flex items-center">
-            <a
-              href="/auth"
+            <Link href="/auth"
               className="block bg-blue-600 text-white py-2 px-4 text-center rounded hover:bg-blue-700 transition-colors duration-200"
-            >
-              Portal
-            </a>
+            >Portal</Link>
           </li>
         </ul>
       </div>

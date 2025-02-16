@@ -1,8 +1,6 @@
 "use client";
-import Link from "next/link";
 import Footer from "@/app/components/footer";
 import PortalNavbar from "@/app/components/PortalNavbar";
-import { UserPen } from "lucide-react";
 
 export default function UpdateAccountDetails() {
 
@@ -36,8 +34,8 @@ export default function UpdateAccountDetails() {
               <input type="email" defaultValue="john.doe@example.com"
                 className="w-full px-4 py-2 border rounded"/>
             </div>
-            <p className="font-semibold pb-4">Please note, the "Chalet Number" and "Membership" 
-              fields cannot be edited, contact <a href="mailto:largiemorecoa@gmail.com "
+            <p className="font-semibold pb-4">Please note, the &quot;Chalet Number&quot; and &quot;Membership&quot;
+              fields cannot be edited, contact <a href="mailto:largiemorecoa@gmail.com"
               className="hover:text-blue-600">largiemorecoa@gmail.com </a> 
               if you feel they are wrong and wish to change it.</p>
             <button type="submit"
