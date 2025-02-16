@@ -1,7 +1,7 @@
 import Footer from "../components/footer";
 import LinkCard from "../components/LinkCard";
 import { UserCog, Folders, Newspaper } from "lucide-react";
-import PortalNavbar from "../components/PortalNavbar";
+import PortalNavbar from "../components/portalnav";
 import Greeting from "../components/Greeting";
 
 export default function PortalPage() {

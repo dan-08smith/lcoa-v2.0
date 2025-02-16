@@ -1,4 +1,4 @@
-import PortalNavbar from "@/app/components/PortalNavbar";
+import PortalNavbar from "@/app/components/portalnav";
 import Banner from "@/app/components/Banner";
 import Footer from "@/app/components/footer";
 

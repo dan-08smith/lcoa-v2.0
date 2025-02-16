@@ -1,5 +1,5 @@
 import Footer from "../../components/footer";
-import PortalNavbar from "../../components/PortalNavbar";
+import PortalNavbar from "../../components/portalnav";
 import Greeting from "../../components/Greeting";
 import Banner from "../../components/Banner";
 

@@ -1,6 +1,7 @@
 "use client";
-import Footer from "../../../components/footer";
-import PortalNavbar from "../../../components/PortalNavbar";
+import Footer from "@/app/components/footer";
+import PortalNavbar from "@/app/components/portalnav";
+
 
 export default function UpdateAccountDetails() {
 
