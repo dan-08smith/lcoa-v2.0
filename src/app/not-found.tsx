@@ -14,7 +14,7 @@ export default function NotFound() {
 
         <div className="mt-10">
           <Link
-            href="/"
+            href={`${process.env.NEXT_PUBLIC_MAIN_URL}`}
             className="rounded-md bg-blue-600 px-4 py-2 text-sm font-semibold text-white shadow hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >
             Go back home
@@ -22,7 +22,6 @@ export default function NotFound() {
         </div>
 
         <div className="mt-6 flex items-center justify-center space-x-8">
-          {/* Status Page Link */}
           <Link
             href="https://lcoa.statuspage.io/"
             className="text-sm font-semibold text-black-600 hover:text-blue-600"
@@ -31,7 +30,7 @@ export default function NotFound() {
           </Link>
 
           <Link
-            href="/support-and-legal"
+            href={`${process.env.NEXT_PUBLIC_MAIN_URL}/support-and-legal`}
             className="text-sm font-semibold text-black-600 hover:text-blue-600"
           >
             Support & Legal <span aria-hidden="true">&rarr;</span>
