@@ -32,7 +32,7 @@ export default function RegistrationPage() {
             </form>
 
             <p className="mt-4 text-center">
-                Already have an account? <Link href="/auth"
+                Already have an account? <Link href="/"
                 className="text-blue-600 hover:underline">Login here</Link>
             </p>
         </AuthCard>

@@ -17,7 +17,7 @@ export default function ResetPasswordPage() {
             </form>
 
             <p className="mt-4 text-center">
-                Remembered your password? <Link href="/auth"
+                Remembered your password? <Link href="/"
                 className="text-blue-600 hover:underline">Login here</Link>
             </p>
         </AuthCard>
