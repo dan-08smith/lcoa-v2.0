@@ -1,6 +1,6 @@
 # LCOA Website
 
-**Visit:** [https://www.url.com](https://www.url.com)
+**Visit:** [https://www.lcoa.d-smith.co.uk](https://www.lcoa.d-smith.co.uk)
 
 This website has been designed and built for LCOA. It consists of a publicly-accessible webpage for general information and a restricted webpage for members to access more confidential information.
 
@@ -48,4 +48,11 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to view the 
 Create an optimised build for deployment.
 ```
 npm run build
+```
+
+**6. [Optional] Troubleshoot: Check for Issues**
+
+Check for any potential issues & improve codebase quality.
+```
+npm run lint
 ```
