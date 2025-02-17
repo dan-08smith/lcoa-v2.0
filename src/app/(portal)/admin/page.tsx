@@ -1,7 +1,8 @@
-import Footer from "../../components/footer";
-import PortalNavbar from "../../components/portalnav";
-import Greeting from "../../components/Greeting";
-import Banner from "../../components/Banner";
+import Banner from "@/app/components/Banner";
+import Footer from "@/app/components/footer";
+import Greeting from "@/app/components/Greeting";
+import PortalNavbar from "@/app/components/portalnav";
+
 
 export default function AdminPortalPage() {
 

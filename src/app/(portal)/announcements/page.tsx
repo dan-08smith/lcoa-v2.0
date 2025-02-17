@@ -1,5 +1,5 @@
-import PortalNavbar from "../../components/portalnav";
-import Footer from "../../components/footer";
+import Footer from "@/app/components/footer";
+import PortalNavbar from "@/app/components/portalnav";
 
 export default function AnnouncementsPage() {
     return (

@@ -26,43 +26,43 @@ export default function PortalNavbar({ leftTitle }: PortalNavbarProps) {
       {menuOpen && (
         <div className="absolute top-full left-0 w-full bg-blue-600 z-50 shadow-md">
           <div className="p-4 space-y-4">
-            <Link href="/"
+            <Link href={`${process.env.NEXT_PUBLIC_MAIN_URL}`}
               className="block px-4 py-2 text-white font-semibold rounded hover:bg-white hover:text-black"
             >Home</Link>
 
             <hr className="border-gray-400" />
 
-            <Link href="/portal"
+            <Link href="/"
               className="block px-4 py-2 text-white font-semibold rounded hover:bg-white hover:text-black"
             >Portal Home</Link>
-            <Link href="/portal/account"
+            <Link href="/account"
               className="block px-4 py-2 text-white font-semibold rounded hover:bg-white hover:text-black"
             >Your Account</Link>
-            <Link href="/portal/files"
+            <Link href="/files"
               className="block px-4 py-2 text-white font-semibold rounded hover:bg-white hover:text-black"
             >Your Files</Link>
-            <Link href="/portal/announcements"
+            <Link href="/announcements"
               className="block px-4 py-2 text-white font-semibold rounded hover:bg-white hover:text-black"
             >LCOA Announcements</Link>
-            <Link href="/portal/committee"
+            <Link href="/committee"
               className="block px-4 py-2 text-white font-semibold rounded hover:bg-white hover:text-black"
             >LCOA Committee</Link>
 
             <hr className="border-gray-400" />
 
-            <Link href="/portal/admin"
+            <Link href="/admin"
               className="block px-4 py-2 text-white font-semibold rounded hover:bg-white hover:text-black"
             >Admin Portal</Link>
-            <Link href="/portal/admin/announcements"
+            <Link href="/admin/announcements"
               className="block px-4 py-2 text-white font-semibold rounded hover:bg-white hover:text-black"
             >Announcements Manager</Link>
-            <Link href="/portal/admin/users"
+            <Link href="/admin/users"
               className="block px-4 py-2 text-white font-semibold rounded hover:bg-white hover:text-black"
             >Users Manager</Link>
 
             <hr className="border-gray-400" />
 
-            <Link href="/auth/logout"
+            <Link href={`${process.env.NEXT_PUBLIC_AUTH_URL}/logout`}
               className="block px-4 py-2 bg-red-600 hover:bg-red-700 text-white font-semibold rounded"
             >Log Out</Link>
           </div>

@@ -1,9 +1,9 @@
 "use client";
 import Link from "next/link";
-import Footer from "../../components/footer";
-import PortalNavbar from "../../components/portalnav";
-import LinkCard from "../../components/LinkCard";
 import { UserPen, SquareAsterisk, ShieldCheck } from "lucide-react";
+import Footer from "@/app/components/footer";
+import PortalNavbar from "@/app/components/portalnav";
+import LinkCard from "@/app/components/LinkCard";
 
 export default function AccountPage() {
 
@@ -17,7 +17,7 @@ export default function AccountPage() {
         <section className="bg-white shadow rounded p-6 mb-8 relative">
           <div className="flex items-center justify-between mb-4">
             <h2 className="text-2xl font-bold mb-2">Account Details</h2>
-            <a href="/portal/account/update-details"
+            <a href="/account/update-details"
               className="absolute top-6 right-6"
               aria-label="Update Account Details"
             ><UserPen className="w-8 h-8 align-right text-blue-600 mr-4" />
@@ -59,7 +59,7 @@ export default function AccountPage() {
 
         <section className="bg-white shadow rounded p-6 mb-8">
           <LinkCard
-            href="/auth/change-password"
+            href={`${process.env.NEXT_PUBLIC_AUTH_URL}/change-password`}
             icon={SquareAsterisk}
             label="Change Your Password"
           />
@@ -67,7 +67,7 @@ export default function AccountPage() {
 
         <section className="bg-white shadow rounded p-6 mb-8">
           <LinkCard
-            href="/auth/2fa/enable"
+            href={`${process.env.NEXT_PUBLIC_AUTH_URL}/2fa/enable`}
             icon={ShieldCheck}
             label="Enable 2 Factor Authentication"
           />
@@ -77,7 +77,7 @@ export default function AccountPage() {
           <h2 className="text-2xl font-bold mb-4">Delete Your Account</h2>
           <p className="mb-2">Click the button below to delete your account and all data stored by LCOA.</p>
           <p className="italic font-bold mb-5">Warning: Please note, this action cannot be undone.</p>
-          <Link href="/auth/delete-account"
+          <Link href={`${process.env.NEXT_PUBLIC_AUTH_URL}/delete-account`}
             className="bg-red-600 text-white px-4 py-2 hover:bg-red-700 font-bold rounded"
           >Delete Account</Link>
         </section>
