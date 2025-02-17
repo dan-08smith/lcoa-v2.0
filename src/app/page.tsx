@@ -1,11 +1,19 @@
 "use client";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import AuthCard from "./components/AuthCard";
 
 export default function LoginPage() {
+  const router = useRouter();
+
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    router.push(`${process.env.NEXT_PUBLIC_PORTAL_URL}`);
+  };
+
   return (
     <AuthCard title="Login">
-      <form>
+      <form onSubmit={handleSubmit}>
         <div className="mb-4">
           <label className="block mb-1 font-medium">Email</label>
           <input type="email" placeholder="Enter your email"
@@ -27,11 +35,8 @@ export default function LoginPage() {
       </form>
 
       <div className="mt-4 text-center">
-        <p className="mt-2">Don&apos;t have an account? <Link href="/register"
+        <p className="mt-2">Don&apos;t have an account? <Link href="/register/page-1"
           className="text-blue-600 hover:underline">Register here</Link></p>
-        <p className="mt-5 text-gray-600">
-          Want to bypass login? <Link href={`${process.env.NEXT_PUBLIC_PORTAL_URL}`} className="text-blue-600 hover:underline">
-          Click here</Link></p>
       </div>
 
     </AuthCard>

@@ -3,30 +3,28 @@ import { useRouter } from "next/navigation";
 import AuthCard from "@/app/components/AuthCard";
 import Link from "next/link";
 
-export default function ResetPasswordPage() {
+export default function ResetPasswordConfirmPage() {
     const router = useRouter();
 
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        router.push("/reset-password/confirm")
+        router.push("/")
     }
     
     return (
-        <AuthCard title="Reset Your Password">
+        <AuthCard title="Check Your Email">
             <form onSubmit={handleSubmit}>
-                <div className="mb-4">
-                    <label className="block mb-1 font-medium">Email</label>
-                    <input type="email" placeholder="Enter your email"
-                        className="w-full px-4 py-2 border rounded"/>
+                <div className="mb-4 text-center">
+                    <p>Please check your registered email account for a password reset link.</p>
                 </div>
                 <button type="submit" 
                     className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700"
-                >Reset Password</button>
+                >Return to Login</button>
             </form>
 
             <p className="mt-4 text-center">
-                Remembered your password? <Link href="/"
-                className="text-blue-600 hover:underline">Login here</Link>
+                Haven't received a link? <Link href="/reset-password"
+                className="text-blue-600 hover:underline">Try again here</Link>
             </p>
         </AuthCard>
     );
