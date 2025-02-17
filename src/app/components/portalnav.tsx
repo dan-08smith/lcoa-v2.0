@@ -56,9 +56,9 @@ export default function PortalNavbar({ leftTitle }: PortalNavbarProps) {
             <Link href="/admin/announcements"
               className="block px-4 py-2 text-white font-semibold rounded hover:bg-white hover:text-black"
             >Announcements Manager</Link>
-            <Link href="/admin/users"
+            <Link href="/admin/accounts"
               className="block px-4 py-2 text-white font-semibold rounded hover:bg-white hover:text-black"
-            >Users Manager</Link>
+            >Account Manager</Link>
 
             <hr className="border-gray-400" />
 
